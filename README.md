@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+This README document includes what you need to do to get the
 application up and running.
 
-Things you may want to cover:
+NOTE: Make sure you have [Docker](https://docs.docker.com/engine/installation/) installed.
+This project is tested and running perfectly on the following configuration:
+Docker version 17.04.0-ce
+docker-compose version 1.9.0
 
-* Ruby version
+# Getting Started
 
-* System dependencies
+### Build your containers
+`docker-compose build`
 
-* Configuration
+### Install all dependences
+`docker-compose run --rm website bundle install`
 
-* Database creation
+### Create database
+`docker-compose run --rm website bundle exec rake db:create`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Run
+`docker-compose up`
