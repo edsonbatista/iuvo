@@ -10,8 +10,7 @@ RUN mkdir -p $INSTALL_PATH
 WORKDIR $INSTALL_PATH
 # copy gemfile to container
 COPY Gemfile ./
-# set gem path 
+# set gem path
 ENV BUNDLE_PATH /box
 # copy code from container
 COPY . .
-

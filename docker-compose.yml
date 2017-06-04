@@ -36,4 +36,3 @@ volumes:
   redis:
   postgres:
   box:
-
