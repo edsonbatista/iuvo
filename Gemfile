@@ -36,6 +36,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Factory Generator
+  gem "factory_girl_rails"
+  # Random text generator
+  gem "ffaker"
+  # Test generator
+  gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end

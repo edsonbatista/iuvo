@@ -24,3 +24,6 @@ docker-compose version 1.9.0
 
 ### Run
 `docker-compose up`
+
+### Run tests
+`docker-compose run --rm website bundle exec rspec spec/`
