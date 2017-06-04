@@ -39,6 +39,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 gem 'material_icons'
 
+# User creation
+gem 'devise'
+
 group :development, :test do
   # Factory Generator
   gem "factory_girl_rails"
