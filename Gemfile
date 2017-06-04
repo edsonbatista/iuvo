@@ -35,6 +35,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Materialize configuration
+gem 'materialize-sass'
+gem 'material_icons'
+
 group :development, :test do
   # Factory Generator
   gem "factory_girl_rails"
