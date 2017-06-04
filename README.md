@@ -3,10 +3,13 @@
 This README document includes what you need to do to get the
 application up and running.
 
-NOTE: Make sure you have [Docker](https://docs.docker.com/engine/installation/) installed.
+NOTE: Make sure you have [Docker](https://docs.docker.com/engine/installation/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
+
 This project is tested and running perfectly on the following configuration:
+```
 Docker version 17.04.0-ce
 docker-compose version 1.9.0
+```
 
 # Getting Started
 
