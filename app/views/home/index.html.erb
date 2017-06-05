@@ -1,11 +1,11 @@
-<div class="container">
-  <% if user_signed_in? %>
-    <%= link_to "Editar informações", edit_user_registration_path %>
-    <br>
-    <%= link_to "Sair", destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Criar usuario", new_user_registration_path %>
-    <br>
-    <%= link_to "Logar", new_user_session_path %>
-  <% end %>
-</div>
+<% if user_signed_in? %>
+  <%= link_to "Editar informações", edit_user_registration_path %>
+  <br>
+  <%= link_to "Criar uma Instituição", new_institution_path %>
+  <br>
+  <%= link_to "Sair", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to "Criar usuario", new_user_registration_path %>
+  <br>
+  <%= link_to "Logar", new_user_session_path %>
+<% end %>
