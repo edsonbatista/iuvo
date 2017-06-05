@@ -16,7 +16,7 @@ class InstitutionsController < ApplicationController
   end
 
   def create
-    service = Institutions::Creator.new(institution_params)
+    service = Institutions::Creator.new(current_user, institution_params)
     service.call
     @institution = service.record
 

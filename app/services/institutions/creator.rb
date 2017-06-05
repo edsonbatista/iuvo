@@ -3,14 +3,15 @@ module Institutions
 
     attr_reader :record
 
-    def initialize(params)
-      @params = params
-      @record = nil
+    def initialize(user, params)
+      @user   = user
+      @record = Institution.new(params)
     end
 
     def call
       Institution.transaction do
-        record = Institution.create!(params)
+        record.save!
+        Administration.create!(user: @user, institution: record)
       end
       true
     rescue ActiveRecord::RecordNotSaved
