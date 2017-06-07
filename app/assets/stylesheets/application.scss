@@ -1,2 +1,23 @@
 @import "materialize";
 @import "material_icons";
+
+div.nav-wrapper {
+    background-color: #1A2B2B
+}
+
+.page-footer {
+    background-color: #1A2B2B
+}
+
+.seta-baixo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #f00;
+}

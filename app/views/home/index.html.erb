@@ -1,11 +1,152 @@
-<% if user_signed_in? %>
-  <%= link_to "Editar informações", edit_user_registration_path %>
-  <br>
-  <%= link_to "Criar uma Instituição", new_institution_path %>
-  <br>
-  <%= link_to "Sair", destroy_user_session_path, method: :delete %>
-<% else %>
-  <%= link_to "Criar usuario", new_user_registration_path %>
-  <br>
-  <%= link_to "Logar", new_user_session_path %>
-<% end %>
+<!-- Navbar -->
+<header class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">IUVO</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trabalhos dispníveis</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Explorar<i class="material-icons left">search</i></a></li>
+        <li>
+          <% if user_signed_in? %>
+          <%= link_to "Editar informações", edit_user_registration_path %>
+          <%= link_to "Criar uma Instituição", new_institution_path %>
+          <%= link_to "Sair", destroy_user_session_path, method: :delete %>
+          <% else %>
+
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- Page Layout here -->
+<div class="row">
+  <div class="col s12 m8 l6">
+    <h2>Hack 2 Save</h2>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo atque impedit, facilis recusandae culpa laudantium eaque. Minus vitae, debitis aliquam quam cupiditate dolorum est esse sint praesentium natus incidunt eos!</p>
+    <%= link_to "Entrar", new_user_session_path, class:"waves-effect waves-teal btn-flat" %>
+    <%= link_to "Cadastrar", new_user_registration_path, class:"waves-effect waves-teal btn-flat" %>
+  </div>
+  <div class="col s12 m8 l6">
+  </div>
+</div>
+<div class="center-align">
+  <i class="material-icons">keyboard_arrow_down</i>
+</div>
+<br>
+<div class="center-align">
+  <div class="container">
+    <h3>Últimos trabalhos</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Pariatur praesentium laboriosam magnam modi natus laudantium quos ad iure.</p>
+    <a class="waves-effect waves-teal btn-flat">Entrar</a>
+    <%= link_to "Entrar", new_user_session_path, class:"waves-effect waves-teal btn-flat" %>
+    <%= link_to "Cadastrar", new_user_registration_path, class:"waves-effect waves-teal btn-flat" %>
+    <p></p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6 l4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6 l6">
+      <h5>#sobrenós Lorem ipsum dolor sit amet, consectetur </h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+        Dolores deleniti fugit hic sapiente magnam, unde commodi non atque asperiores natus architecto, maxime rem tenetur minus molestias reprehenderit excepturi sequi? Expedita.</p>
+      </div>
+      <div class="col s12 m6 l6">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Termos & Condições</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Explorar</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Cadastrar</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Fazer Login</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col l6 s12">
+          <p class="white-text">Conheça as origens desse projeto</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright IUVO
+      </div>
+    </div>
+  </footer>
