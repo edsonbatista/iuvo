@@ -26,8 +26,13 @@ ActiveRecord::Schema.define(version: 20170605034403) do
 
   create_table "institutions", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "registration"
+    t.string   "email",        default: "", null: false
+    t.integer  "phone"
+    t.string   "password"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.index ["email"], name: "index_institutions_on_email", unique: true, using: :btree
   end
 
   create_table "users", force: :cascade do |t|

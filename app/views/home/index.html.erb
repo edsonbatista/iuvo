@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
   <%= link_to "Editar informações", edit_user_registration_path %>
   <br>
-  <%= link_to "Criar uma Instituição", new_institution_path %>
+  <%= link_to "Editar informações", edit_user_registration_path %>
   <br>
   <%= link_to "Sair", destroy_user_session_path, method: :delete %>
 <% else %>
