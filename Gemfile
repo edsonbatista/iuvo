@@ -42,6 +42,9 @@ gem 'material_icons'
 # User creation
 gem 'devise'
 
+# Simple form
+gem 'simple_form'
+
 group :development, :test do
   # Factory Generator
   gem "factory_girl_rails"

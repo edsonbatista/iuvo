@@ -1,0 +1,21 @@
+<!-- Navbar -->
+<header class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <%= link_to root_path do %>
+        <span class="brand-logo">IUVO</span>
+      <% end %>
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "Trabalhos Disponíveis", jobs_path %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "Editar perfil", edit_user_registration_path %></li>
+          <li><%= link_to "Criar uma Instituição", new_institution_path %></li>
+          <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Explorar<i class="material-icons left">search</i></a></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+</header>
