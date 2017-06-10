@@ -31,7 +31,7 @@ docker-compose version 1.9.0
 ### Create database
 `docker-compose run --rm website bundle exec rake db:create`
 
-### Run
+### Runn
 `docker-compose up`
 
 ### Run tests
