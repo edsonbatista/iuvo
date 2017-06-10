@@ -11,6 +11,11 @@ Docker version 17.04.0-ce
 docker-compose version 1.9.0
 ```
 
+## [Click and open the project](http://.herokuapp.com)
+
+![Onebitcode_ Exchange](https://raw.githubusercontent.com/edsonbatista/iuvo/master/app/assets/images/screenshot.png)
+
+
 # Getting Started
 
 ### Build your containers
