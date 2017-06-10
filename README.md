@@ -1,4 +1,4 @@
-# README
+# HACKER2SAVE !
 
 This README document includes what you need to do to get the
 application up and running.
@@ -13,7 +13,7 @@ docker-compose version 1.9.0
 
 ## [Click and open the project](http://.herokuapp.com)
 
-![Onebitcode_ Exchange](https://raw.githubusercontent.com/edsonbatista/iuvo/master/app/assets/images/screenshot.png)
+![Hacker2Save](https://raw.githubusercontent.com/edsonbatista/iuvo/master/app/assets/images/screenshot.png)
 
 
 # Getting Started
