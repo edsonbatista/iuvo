@@ -20,7 +20,6 @@ docker-compose version 1.9.0
 
 ![Hacker2Save](https://raw.githubusercontent.com/edsonbatista/iuvo/master/app/assets/images/screenshot.png)
 
-
 # Getting Started
 
 ### Build your containers
